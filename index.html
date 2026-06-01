@@ -223,5 +223,18 @@ Amor hacia las mascotas o cosas: cariño hacia animales, actividades o lugares i
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="Banner.js"></script>
+<script>
+let visitas = localStorage.getItem("visitas");
+
+if(visitas == null){
+    visitas = 0;
+}
+
+visitas++;
+
+localStorage.setItem("visitas", visitas);
+
+document.write("Visitas: " + visitas);
+</script>
 </body>
 </html>
